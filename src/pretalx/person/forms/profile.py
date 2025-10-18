@@ -173,6 +173,7 @@ class SpeakerProfileForm(
         model = SpeakerProfile
         fields = (
             "biography",
+            "affiliation",
             "internal_notes",
         )
         public_fields = ["name", "biography", "avatar"]

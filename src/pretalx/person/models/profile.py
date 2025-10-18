@@ -43,6 +43,12 @@ class SpeakerProfile(PretalxModel):
         null=True,
         blank=True,
     )
+    affiliation = models.CharField(
+        max_length=200,
+        verbose_name=_("Affiliation"),
+        null=True,
+        blank=True,
+    )
     has_arrived = models.BooleanField(
         default=False, verbose_name=_("The speaker has arrived")
     )
