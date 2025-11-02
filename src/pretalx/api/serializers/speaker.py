@@ -72,7 +72,7 @@ class SpeakerSerializer(FlexFieldsSerializerMixin, PretalxSerializer):
 
     class Meta:
         model = SpeakerProfile
-        fields = ("code", "name", "biography", "submissions", "avatar_url", "answers")
+        fields = ("code", "name", "biography", "affiliation", "submissions", "avatar_url", "answers")
         expandable_fields = {
             "submissions": (
                 "pretalx.api.serializers.submission.SubmissionSerializer",

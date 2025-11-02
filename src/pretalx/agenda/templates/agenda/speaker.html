@@ -31,6 +31,9 @@ SPDX-License-Identifier: AGPL-3.0-only WITH LicenseRef-Pretalx-AGPL-3.0-Terms
         <div class="d-flex mb-2">
             <h3 class="heading-with-buttons">
                 {{ profile.user.get_display_name }}
+                {% if profile.affiliation %}
+                    <div class="speaker-affiliation">{{ profile.affiliation }}</div>
+                {% endif %}
                 {% if request.event.current_schedule %}
                     <div class="buttons ml-auto flip">
                         <a class="btn btn-outline-primary" href="{{ profile.urls.talks_ical }}">

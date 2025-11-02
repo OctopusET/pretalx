@@ -39,7 +39,7 @@ Users and profiles
    :members: get_display_name,event_profile,log_action,get_events_with_any_permission,get_events_for_permission,get_permissions_for_event
 
 .. autoclass:: pretalx.person.models.profile.SpeakerProfile(*args, **kwargs)
-   :members: submissions,talks,answers
+   :members: submissions,talks,answers,affiliation
 
 .. autoclass:: pretalx.person.models.information.SpeakerInformation(*args, **kwargs)
    :members: id

@@ -542,6 +542,33 @@ def test_speaker_update_change_name_email(
         )
 
 
+
+@pytest.mark.django_db
+def test_speaker_update_affiliation_by_orga(
+    client, orga_user_write_token, event, speaker, submission
+):
+    new_affiliation = "My University"
+    response = client.patch(
+        event.api_urls.speakers + f"{speaker.code}/",
+        data=json.dumps({"affiliation": new_affiliation}),
+        follow=True,
+        content_type="application/json",
+        headers={"Authorization": f"Token {orga_user_write_token.token}"},
+    )
+    assert response.status_code == 200, response.text
+    content = json.loads(response.text)
+    assert content["affiliation"] == new_affiliation
+
+    with scope(event=event):
+        profile = speaker.event_profile(event)
+        assert profile.affiliation == new_affiliation
+        assert (
+            profile.logged_actions()
+            .filter(action_type="pretalx.user.profile.update")
+            .exists()
+        )
+
+
 @pytest.mark.django_db
 def test_speaker_update_by_orga_duplicate_email(
     client, orga_user_write_token, event, speaker, other_speaker, submission

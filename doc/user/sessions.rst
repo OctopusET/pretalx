@@ -203,6 +203,8 @@ Speakers
 
 Sessions can have any number of speakers (including none).
 If a session is submitted through the CfP, the submitting user is automatically added as a speaker.
+Each speaker has their own profile page, with their biography, and potentially a picture.
+You can also ask them to provide their affiliation, which will be displayed on their profile page and on the session page.
 
 Organisers can add or remove speakers at any time.
 You can do so from the „Speakers“ tab on the session detail page.
