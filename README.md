@@ -249,7 +249,7 @@
 | src/pretalx/submission/models/comment.py                                   |       24 |        0 |        0 |        0 |    100% |           |
 | src/pretalx/submission/models/feedback.py                                  |       20 |        0 |        0 |        0 |    100% |           |
 | src/pretalx/submission/models/question.py                                  |      225 |        8 |       48 |        5 |     94% |371, 375-376, 391, 433->436, 540, 582->589, 584, 587-588 |
-| src/pretalx/submission/models/resource.py                                  |       46 |        4 |       10 |        3 |     84% |67->exit, 74->exit, 88-97 |
+| src/pretalx/submission/models/resource.py                                  |       46 |        1 |       10 |        3 |     93% |67->exit, 74->exit, 94 |
 | src/pretalx/submission/models/review.py                                    |      132 |       11 |       26 |        7 |     86% |55-56, 59->exit, 72, 76-78, 95, 98->102, 103, 108, 201, 317 |
 | src/pretalx/submission/models/submission.py                                |      534 |       40 |      124 |       17 |     90% |404-406, 482, 527->547, 533, 535, 539-541, 554-555, 673->679, 695-696, 798->exit, 805, 821-823, 826, 909, 922-937, 986, 1018, 1073-1075, 1086-1091, 1180->exit, 1199-1211, 1228->exit, 1290 |
 | src/pretalx/submission/models/tag.py                                       |       24 |        0 |        0 |        0 |    100% |           |
@@ -354,11 +354,12 @@
 | src/tests/submission/test\_access\_code\_model.py                          |        7 |        0 |        0 |        0 |    100% |           |
 | src/tests/submission/test\_cfp\_model.py                                   |       15 |        0 |        2 |        0 |    100% |           |
 | src/tests/submission/test\_question\_model.py                              |       59 |        0 |        4 |        0 |    100% |           |
+| src/tests/submission/test\_resource\_model.py                              |       32 |        0 |        0 |        0 |    100% |           |
 | src/tests/submission/test\_review\_model.py                                |       19 |        0 |        0 |        0 |    100% |           |
 | src/tests/submission/test\_submission\_model.py                            |      295 |        0 |        6 |        0 |    100% |           |
 | src/tests/submission/test\_submission\_permissions.py                      |       41 |        0 |        0 |        0 |    100% |           |
 | src/tests/submission/test\_submission\_type\_model.py                      |       21 |        0 |        0 |        0 |    100% |           |
-|                                                                  **TOTAL** | **33284** | **1977** | **5322** |  **747** | **92%** |           |
+|                                                                  **TOTAL** | **33316** | **1974** | **5322** |  **747** | **92%** |           |
 
 
 ## Setup coverage badge
